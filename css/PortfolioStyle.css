@@ -1,0 +1,239 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* All */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar styling */
+.navbar{
+    width:100%;
+    position: fixed;
+    background: crimson;/*look*/
+    padding: 15px 0;
+    z-index: 10;
+}
+.maxwidth{
+    max-width: 1300px;
+    padding:0 80px;
+    margin:auto ;/*look*/
+}
+.navbar .maxwidth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;/*look*/
+}
+.navbar .menu li a{
+    color:#fff;
+    font-family: 'Poppins', sans-serif;/*look*/
+    margin-left: 25px;
+}
+
+/* home section styling */
+.home{
+    background: #000 no-repeat center;/*look*/
+    display: flex;
+    color:#fff;
+    height:100vh;
+    min-height: 500px;/*look*/
+    font-family: 'Ubuntu', sans-serif;/*look*/
+}
+.home .maxwidth{
+    margin: auto 0 auto 40px;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+   
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+    
+    
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    width:600px;
+}
+.home .home-content .text-3{
+    font-size:40px ;
+    margin:5px 0;
+}
+.home .home-content .text-3 span{
+    color:crimson;
+    font-weight: 500;
+
+}
+.home .zaki-image{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    margin-top:60px;
+
+}
+
+/* about section styling */
+
+.about{
+    font-family: 'Poppins', sans-serif;/*look*/
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;/*look*/
+    font-size:40px ;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about .title::before{/*look*/
+    width: 180px;
+}
+
+ section .title::before{/*look*/
+    content: "";
+    position: absolute;
+    bottom: 0;/*look*/
+    left: 50%;/*look*/
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+section .title::after{/*look*/
+    position: absolute;
+    bottom: -12px;/*look*/
+    left: 50%;/*look*/
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content, .services .services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+}
+
+.about .about-content .right .text span{
+   color:crimson; 
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display:inline-block;/*  */
+    margin-top: 10px;
+    padding:10px 30px;
+    background-color: crimson;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    border:2px solid crimson;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+   background: none;
+   color:crimson;
+  }
+
+  /* Services Section Styling */
+  .services .title::before{/*look*/
+    width: 210px;
+    background-color: #fff;
+   
+}
+  .services .title::after{
+    content: "What i provide";
+    background-color: #111;
+   
+}
+  .services{
+    font-family: 'Poppins', sans-serif;/*look*/
+    background-color: #111;
+    color:#fff;
+    padding: 50px 0;   
+  }
+  .services .services-content .card{
+    width:calc(33% -20px);
+    background-color: #222;
+    text-align: center;
+    margin-right: 20px;
+    padding:20px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .services .services-content .card .box {
+        transition: all 0.3s ease;
+        width: 100%;
+  }
+  .services .services-content .card  {
+    transition: all 0.3s ease;
+}
+  .services .services-content .card:hover .box {
+    transform: scale(1.05);
+    
+
+}
+.services .services-content .card:hover  {
+background-color: crimson;
+color:#fff;
+}
+.services .services-content .card:hover .icon  {
+    color: #fff;
+
+}
+  .services .icon{
+    font-size: 50px;
+    color:crimson;
+  }
+
+  .services .services-content .text{
+    font-size: 25px;
+    margin: 10px 0 7px 0;
+   
+  }
